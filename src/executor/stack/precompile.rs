@@ -80,6 +80,9 @@ pub trait PrecompileHandle {
 
 	/// Retreive the gas limit of this call.
 	fn gas_limit(&self) -> Option<u64>;
+
+	/// Retrieve the gas used.
+	fn used_gas(&self) -> u64;
 }
 
 /// A set of precompiles.
